@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Project</title>
+
+    <!-- Bootstrap 4.5.2 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- Bootstrap 4.5.2 JS + jQuery (required for full functionality) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body class="container text-center">
+    <h1 class="my-4">Weather Project</h1>
+    <form id="search-form" class="form-inline justify-content-center mb-4">
+      <input
+        type="text"
+        id="city-input"
+        class="form-control form-control-lg mr-2"
+        placeholder="Enter city name"
+        required
+        style="max-width: 300px; width: 100%"
+      />
+      <button type="submit" class="btn btn-primary btn-lg">Search</button>
+    </form>
+    <div id="weather" class="mb-4"></div>
+    <div id="forecast" class="d-flex justify-content-center flex-wrap"></div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
